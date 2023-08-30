@@ -17,6 +17,7 @@ C:\Users\subhajit\Desktop\Medicare\src\main\java\com\subhajit\Medicare\Payload\r
 C:\Users\subhajit\Desktop\Medicare\src\main\java\com\subhajit\Medicare\Repository\RoleRepository.java
 C:\Users\subhajit\Desktop\Medicare\src\main\java\com\subhajit\Medicare\Security\config\EmailConfig.java
 C:\Users\subhajit\Desktop\Medicare\src\main\java\com\subhajit\Medicare\Payload\request\SignupRequest.java
+C:\Users\subhajit\Desktop\Medicare\src\main\java\com\subhajit\Medicare\Payload\request\UpdatePasswordRequest.java
 C:\Users\subhajit\Desktop\Medicare\src\main\java\com\subhajit\Medicare\Security\jwt\AuthEntryPointJwt.java
 C:\Users\subhajit\Desktop\Medicare\src\main\java\com\subhajit\Medicare\Security\config\SecurityConfig.java
 C:\Users\subhajit\Desktop\Medicare\src\main\java\com\subhajit\Medicare\Repository\UserRepository.java

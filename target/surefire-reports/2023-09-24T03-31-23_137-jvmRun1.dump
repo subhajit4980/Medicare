@@ -1,0 +1,317 @@
+# Created at 2023-09-24T03:31:33.466
+Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
+Thread dump before exiting the process (13548@DESKTOP-PN459PP):
+"main" 
+   java.lang.Thread.State: RUNNABLE
+        at app//org.springframework.util.ConcurrentReferenceHashMap.get(ConcurrentReferenceHashMap.java:235)
+        at app//org.springframework.core.annotation.AnnotationsScanner.getDeclaredAnnotations(AnnotationsScanner.java:446)
+        at app//org.springframework.core.annotation.AnnotationsScanner.processClassHierarchy(AnnotationsScanner.java:189)
+        at app//org.springframework.core.annotation.AnnotationsScanner.processClassHierarchy(AnnotationsScanner.java:206)
+        at app//org.springframework.core.annotation.AnnotationsScanner.processClassHierarchy(AnnotationsScanner.java:206)
+        at app//org.springframework.core.annotation.AnnotationsScanner.processClassHierarchy(AnnotationsScanner.java:206)
+        at app//org.springframework.core.annotation.AnnotationsScanner.processClassHierarchy(AnnotationsScanner.java:172)
+        at app//org.springframework.core.annotation.AnnotationsScanner.processClass(AnnotationsScanner.java:109)
+        at app//org.springframework.core.annotation.AnnotationsScanner.process(AnnotationsScanner.java:92)
+        at app//org.springframework.core.annotation.AnnotationsScanner.scan(AnnotationsScanner.java:82)
+        at app//org.springframework.core.annotation.TypeMappedAnnotations.scan(TypeMappedAnnotations.java:248)
+        at app//org.springframework.core.annotation.TypeMappedAnnotations.isPresent(TypeMappedAnnotations.java:104)
+        at app//org.springframework.core.annotation.AnnotatedElementUtils.hasAnnotation(AnnotatedElementUtils.java:541)
+        at app//org.springframework.aop.support.annotation.AnnotationClassFilter.matches(AnnotationClassFilter.java:65)
+        at app//org.springframework.aop.support.MethodMatchers$ClassFilterAwareUnionMethodMatcher.matchesClass2(MethodMatchers.java:207)
+        at app//org.springframework.aop.support.MethodMatchers$UnionMethodMatcher.matches(MethodMatchers.java:123)
+        at app//org.springframework.aop.support.AopUtils.canApply(AopUtils.java:252)
+        at app//org.springframework.aop.support.AopUtils.canApply(AopUtils.java:288)
+        at app//org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:320)
+        at app//org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:128)
+        at app//org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:97)
+        at app//org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:78)
+        at app//org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:366)
+        at app//org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:318)
+        at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:434)
+        at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1773)
+        at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+        at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+        at app//org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+        at app//org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$640/0x000001434e2554c0.getObject(Unknown Source)
+        at app//org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+        at app//org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+        at app//org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+        at app//org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+        at app//org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942)
+        at app//org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+        at app//org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+        at app//org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+        at app//org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+        at app//org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+        at app//org.springframework.boot.test.context.SpringBootContextLoader$$Lambda$489/0x000001434e173a30.getWithException(Unknown Source)
+        at app//org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+        at app//org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+        at app//org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1406)
+        at app//org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:545)
+        at app//org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+        at app//org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+        at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:187)
+        at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:119)
+        at app//org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127)
+        at app//org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
+        at app//org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
+        at app//org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:241)
+        at app//org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+        at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:377)
+        at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor$$Lambda$472/0x000001434e166648.execute(Unknown Source)
+        at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:382)
+        at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:377)
+        at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor$$Lambda$471/0x000001434e166220.accept(Unknown Source)
+        at java.base@17.0.8/java.util.stream.StreamSpliterators$WrappingSpliterator$$Lambda$173/0x000001434e073018.accept(Unknown Source)
+        at java.base@17.0.8/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+        at java.base@17.0.8/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+        at java.base@17.0.8/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+        at java.base@17.0.8/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+        at java.base@17.0.8/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+        at java.base@17.0.8/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+        at java.base@17.0.8/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+        at java.base@17.0.8/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+        at java.base@17.0.8/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+        at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:376)
+        at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:289)
+        at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor$$Lambda$470/0x000001434e166000.execute(Unknown Source)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:288)
+        at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:278)
+        at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor$$Lambda$464/0x000001434e161f30.get(Unknown Source)
+        at java.base@17.0.8/java.util.Optional.orElseGet(Optional.java:364)
+        at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:277)
+        at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor$$Lambda$327/0x000001434e0b2ec0.getTestInstances(Unknown Source)
+        at app//org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:105)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$$Lambda$463/0x000001434e161d10.execute(Unknown Source)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$264/0x000001434e0a1370.execute(Unknown Source)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService$$Lambda$290/0x000001434e0a9378.accept(Unknown Source)
+        at java.base@17.0.8/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$286/0x000001434e0a8888.execute(Unknown Source)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$285/0x000001434e0a8668.invoke(Unknown Source)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.8/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@17.0.8/java.lang.ref.Reference.processPendingReferences(Reference.java:253)
+        at java.base@17.0.8/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:215)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@17.0.8/java.lang.Object.wait(Native Method)
+        at java.base@17.0.8/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@17.0.8/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+        at java.base@17.0.8/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:172)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Notification Thread" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.8/java.lang.Object.wait(Native Method)
+        at java.base@17.0.8/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@17.0.8/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+        at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
+        at java.base@17.0.8/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)
+
+"surefire-forkedjvm-stream-flusher" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@17.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+        at java.base@17.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@17.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+        at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+        at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@17.0.8/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@17.0.8/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:197)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:579)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$600(ForkedBooter.java:79)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:315)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:357)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.exitByConfiguration(CommandReader.java:367)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:330)
+        at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
+
+"Thread-2" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.8/sun.net.dns.ResolverConfigurationImpl.notifyAddrChange0(Native Method)
+        at java.base@17.0.8/sun.net.dns.ResolverConfigurationImpl$AddressChangeListener.run(ResolverConfigurationImpl.java:176)
+
+"BufferPoolPruner-1-thread-1" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@17.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+        at java.base@17.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@17.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+        at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+        at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
+
+"cluster-ClusterId{value='650f6039963fb35cbb7d7bf6', description='null'}-srv-medicare.qzyf5vd.mongodb.net" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.8/java.lang.Thread.sleep(Native Method)
+        at app//com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:108)
+        at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
+
+"cluster-ClusterId{value='650f6039963fb35cbb7d7bf6', description='null'}-ac-5hh2zkz-shard-00-02.qzyf5vd.mongodb.net:27017" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.8/sun.nio.ch.Net.poll(Native Method)
+        at java.base@17.0.8/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:181)
+        at java.base@17.0.8/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:285)
+        at java.base@17.0.8/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+        at java.base@17.0.8/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+        at java.base@17.0.8/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+        at java.base@17.0.8/java.net.Socket$SocketInputStream.read(Socket.java:966)
+        at java.base@17.0.8/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+        at java.base@17.0.8/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+        at java.base@17.0.8/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+        at java.base@17.0.8/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+        at java.base@17.0.8/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)
+        at app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:113)
+        at app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:138)
+        at app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:735)
+        at app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:596)
+        at app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:440)
+        at app//com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:397)
+        at app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:227)
+        at app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159)
+        at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
+
+"cluster-rtt-ClusterId{value='650f6039963fb35cbb7d7bf6', description='null'}-ac-5hh2zkz-shard-00-02.qzyf5vd.mongodb.net:27017" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.8/java.lang.Thread.sleep(Native Method)
+        at app//com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:452)
+        at app//com.mongodb.internal.connection.DefaultServerMonitor.access$1500(DefaultServerMonitor.java:66)
+        at app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:424)
+        at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
+
+"cluster-ClusterId{value='650f6039963fb35cbb7d7bf6', description='null'}-ac-5hh2zkz-shard-00-01.qzyf5vd.mongodb.net:27017" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.8/sun.nio.ch.Net.poll(Native Method)
+        at java.base@17.0.8/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:181)
+        at java.base@17.0.8/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:285)
+        at java.base@17.0.8/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+        at java.base@17.0.8/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+        at java.base@17.0.8/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+        at java.base@17.0.8/java.net.Socket$SocketInputStream.read(Socket.java:966)
+        at java.base@17.0.8/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+        at java.base@17.0.8/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+        at java.base@17.0.8/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+        at java.base@17.0.8/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+        at java.base@17.0.8/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)
+        at app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:113)
+        at app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:138)
+        at app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:735)
+        at app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:596)
+        at app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:440)
+        at app//com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:397)
+        at app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:227)
+        at app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159)
+        at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
+
+"cluster-rtt-ClusterId{value='650f6039963fb35cbb7d7bf6', description='null'}-ac-5hh2zkz-shard-00-01.qzyf5vd.mongodb.net:27017" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.8/java.lang.Thread.sleep(Native Method)
+        at app//com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:452)
+        at app//com.mongodb.internal.connection.DefaultServerMonitor.access$1500(DefaultServerMonitor.java:66)
+        at app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:424)
+        at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
+
+"cluster-ClusterId{value='650f6039963fb35cbb7d7bf6', description='null'}-ac-5hh2zkz-shard-00-00.qzyf5vd.mongodb.net:27017" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.8/sun.nio.ch.Net.poll(Native Method)
+        at java.base@17.0.8/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:181)
+        at java.base@17.0.8/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:285)
+        at java.base@17.0.8/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+        at java.base@17.0.8/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+        at java.base@17.0.8/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+        at java.base@17.0.8/java.net.Socket$SocketInputStream.read(Socket.java:966)
+        at java.base@17.0.8/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+        at java.base@17.0.8/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+        at java.base@17.0.8/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+        at java.base@17.0.8/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+        at java.base@17.0.8/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)
+        at app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:113)
+        at app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:138)
+        at app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:735)
+        at app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:596)
+        at app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:440)
+        at app//com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:397)
+        at app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:227)
+        at app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159)
+        at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
+
+"cluster-rtt-ClusterId{value='650f6039963fb35cbb7d7bf6', description='null'}-ac-5hh2zkz-shard-00-00.qzyf5vd.mongodb.net:27017" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.8/java.lang.Thread.sleep(Native Method)
+        at app//com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:452)
+        at app//com.mongodb.internal.connection.DefaultServerMonitor.access$1500(DefaultServerMonitor.java:66)
+        at app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:424)
+        at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
+
+"MaintenanceTimer-4-thread-1" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@17.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+        at java.base@17.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@17.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+        at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+        at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
+
+"MaintenanceTimer-3-thread-1" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@17.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+        at java.base@17.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@17.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+        at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+        at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
+
+"MaintenanceTimer-2-thread-1" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@17.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+        at java.base@17.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@17.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+        at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+        at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
+
+
+

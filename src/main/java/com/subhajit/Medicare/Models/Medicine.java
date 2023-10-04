@@ -1,10 +1,7 @@
 package com.subhajit.Medicare.Models;
 
 import jakarta.validation.constraints.NotBlank;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -12,7 +9,9 @@ import java.util.List;
 @Getter
 @Setter
 @AllArgsConstructor
-//@NoArgsConstructor
+@NoArgsConstructor
+@Builder
+@Data
 @Document(collection = "Medicine")
 public class Medicine {
     @Id
@@ -35,4 +34,15 @@ public class Medicine {
     @NotBlank
     private String imageUrl;
 
+    public Medicine(String name, String description, double price, int quantityInStock, String manufacturer, String expiryDate, List<String> activeIngredients, String usageInstructions, String imageUrl) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.quantityInStock = quantityInStock;
+        this.manufacturer = manufacturer;
+        this.expiryDate = expiryDate;
+        this.activeIngredients = activeIngredients;
+        this.usageInstructions = usageInstructions;
+        this.imageUrl = imageUrl;
+    }
 }

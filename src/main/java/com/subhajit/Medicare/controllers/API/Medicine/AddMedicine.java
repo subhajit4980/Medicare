@@ -1,4 +1,4 @@
-package com.subhajit.Medicare.controllers.API.Item;
+package com.subhajit.Medicare.controllers.API.Medicine;
 
 import com.subhajit.Medicare.Models.Medicine;
 import com.subhajit.Medicare.Payload.response.MessageResponse;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("api/medicine")
+@RequestMapping("/api/medicine")
 public class AddMedicine {
     @Autowired
     MedicineRepository medicineRepository;
@@ -24,8 +24,11 @@ public class AddMedicine {
                     .badRequest()
                     .body(new MessageResponse("Error: Medicine already added !"));
         }
-        return null;
-//        Medicine medicine1= new Medicine(medicine.getName(),medicine.getDescription(),medicine.getPrice(),medicine.getQuantityInStock(),medicine.getManufacturer(),medicine.getExpiryDate(),medicine.getActiveIngredients(),medicine.getUsageInstructions(),medicine.getImageUrl());
+        Medicine medicine_obj= new Medicine(medicine.getName(),medicine.getDescription(),medicine.getPrice(),medicine.getQuantityInStock(),medicine.getManufacturer(),medicine.getExpiryDate(),medicine.getActiveIngredients(),medicine.getUsageInstructions(),medicine.getImageUrl());
+        medicine_obj.setExpiryDate(medicine.getExpiryDate());
+        medicine_obj.setQuantityInStock(medicine.getQuantityInStock());
+        medicineRepository.save(medicine_obj);
+        return  ResponseEntity.ok(new MessageResponse(" Medicine  added successfully"));
     }
 
 }

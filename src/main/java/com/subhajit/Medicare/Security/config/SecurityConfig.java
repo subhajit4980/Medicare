@@ -57,7 +57,7 @@ public class SecurityConfig {
         http.csrf(csrf -> csrf.disable()).cors(cor -> cor.disable())
                 .exceptionHandling(exception -> exception.authenticationEntryPoint(point))
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .authorizeHttpRequests(auth -> auth.requestMatchers("/api/auth/**").permitAll().requestMatchers("/").permitAll().requestMatchers("/api/test/**")
+                .authorizeHttpRequests(auth -> auth.requestMatchers("/api/auth/**").permitAll().requestMatchers("/**").permitAll().requestMatchers("/openUI/**").permitAll().requestMatchers("/api/test/**")
                         .permitAll().anyRequest().authenticated());
         http.authenticationProvider(authenticationProvider());
         http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);

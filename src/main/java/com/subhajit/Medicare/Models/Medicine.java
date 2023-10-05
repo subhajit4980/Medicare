@@ -45,4 +45,11 @@ public class Medicine {
         this.usageInstructions = usageInstructions;
         this.imageUrl = imageUrl;
     }
+
+    public Medicine( String name, double price, int quantityInStock, String expiryDate) {
+        this.name = name;
+        this.price = price;
+        this.quantityInStock = quantityInStock;
+        this.expiryDate = expiryDate;
+    }
 }

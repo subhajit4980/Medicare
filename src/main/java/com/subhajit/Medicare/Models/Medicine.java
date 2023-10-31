@@ -33,8 +33,12 @@ public class Medicine {
     private String usageInstructions;
     @NotBlank
     private String imageUrl;
+    @NotBlank
+    private int buyer;
+    @NotBlank
+    private double rating;
 
-    public Medicine(String name, String description, double price, int quantityInStock, String manufacturer, String expiryDate, List<String> activeIngredients, String usageInstructions, String imageUrl) {
+    public Medicine(String name, String description, double price, int quantityInStock, String manufacturer, String expiryDate, List<String> activeIngredients, String usageInstructions, String imageUrl,int buyer,double rating) {
         this.name = name;
         this.description = description;
         this.price = price;
@@ -44,6 +48,8 @@ public class Medicine {
         this.activeIngredients = activeIngredients;
         this.usageInstructions = usageInstructions;
         this.imageUrl = imageUrl;
+        this.buyer=buyer;
+        this.rating=rating;
     }
 
     public Medicine( String name, double price, int quantityInStock, String expiryDate) {

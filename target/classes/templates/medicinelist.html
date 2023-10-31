@@ -34,7 +34,7 @@
                 <img th:src="${medicine.imageUrl}" alt="Medicine Image" style="width: 150px; height: 150px; display: block; margin: 0 auto;">
                 <h2 th:text="${medicine.name}">Medicine Name</h2>
                 <p th:text="${'Description: ' + medicine.description}">Description</p>
-                <p th:text="${#temporals.formatDecimal(medicine.price, 2)}">Price</p>
+<!--                <p th:text="${#numbers.formatDecimal(medicine.price, 2)}">Price</p>-->
                 <p th:text="${'Quantity in Stock: ' + medicine.quantityInStock}">Quantity in Stock</p>
                 <p th:text="${'Manufacturer: ' + medicine.manufacturer}">Manufacturer</p>
                 <p th:text="${'Expiry Date: ' + medicine.expiryDate}">Expiry Date</p>

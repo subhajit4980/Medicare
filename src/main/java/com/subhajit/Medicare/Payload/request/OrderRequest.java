@@ -11,6 +11,8 @@ import lombok.*;
 @Data
 public class OrderRequest {
     @NotBlank
+    private String medicineId;
+    @NotBlank
     private String medicineName;
     @NotBlank
     private int NoOfQuantityToBuy;

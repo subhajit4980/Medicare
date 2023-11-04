@@ -9,5 +9,7 @@ import java.util.Optional;
 
 public interface MedicineRepository extends MongoRepository<Medicine, String> {
     Optional<Medicine> findByName(String name);
+    Optional<Medicine> findByMedicineId(String medicineId);
     Boolean existsByName(String name);
+//    Boolean existsByMedicineId(String medicineId);
 }

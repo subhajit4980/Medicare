@@ -9,9 +9,9 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 @Data
-public class LoginRequest {
-    @NotBlank
+public class CartRequest {
+    private String medicineId;
     private String username;
-    private String password;
-
+    private  String medicineName;
+    private int NoOfQuantityToBuy;
 }

@@ -7,9 +7,6 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.*;
 
@@ -22,6 +19,11 @@ public class User  {
     @Id
     private String id;
 
+    @NotBlank
+    private String firstName;
+
+    @NotBlank
+    private String lastName;
     @NotBlank
     @Size(max = 20)
     private String username;
@@ -37,10 +39,14 @@ public class User  {
 
     @NotBlank
     private String creationTime;
-
+//    @DBRef
+//    private List<Medicine> cart=new ArrayList<>();
+//    private List<Medicine> buy;
     @DBRef
     private Set<Role> roles = new HashSet<>();
-    public User(String username, String email, String password) {
+    public User(String firstName,String lastName,String username, String email, String password) {
+        this.firstName=firstName;
+        this.lastName=lastName;
         this.username = username;
         this.email = email;
         this.password = password;

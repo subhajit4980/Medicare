@@ -1,4 +1,4 @@
-package com.subhajit.Medicare.controllers.API.Medicine;
+package com.subhajit.Medicare.controllers.API.Products;
 
 import com.subhajit.Medicare.Models.Product;
 import com.subhajit.Medicare.Repository.ProductRepository;

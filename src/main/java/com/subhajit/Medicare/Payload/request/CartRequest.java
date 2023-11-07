@@ -10,8 +10,8 @@ import lombok.*;
 @Builder
 @Data
 public class CartRequest {
-    private String medicineId;
+    private String itemId;
     private String username;
     private  String medicineName;
-    private int NoOfQuantityToBuy;
+    private int noOfQuantityToBuy;
 }

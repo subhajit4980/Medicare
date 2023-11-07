@@ -59,7 +59,7 @@ public class SecurityConfig {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 //                .authorizeHttpRequests(auth -> auth.requestMatchers("/api/auth/**").permitAll().requestMatchers("/**").permitAll().requestMatchers("/openUI/**").permitAll().requestMatchers("/api/test/**")
                 .authorizeHttpRequests(auth -> auth.requestMatchers("/api/auth/**").permitAll()
-                        .requestMatchers("/api/medicine/getMedicine").permitAll()
+                        .requestMatchers("/api/productsUser/**").permitAll()
                         .requestMatchers("/api/test/**").permitAll()
                         .anyRequest().authenticated());
         http.authenticationProvider(authenticationProvider());

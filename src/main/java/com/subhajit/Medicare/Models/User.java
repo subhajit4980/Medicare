@@ -39,9 +39,6 @@ public class User  {
 
     @NotBlank
     private String creationTime;
-//    @DBRef
-//    private List<Medicine> cart=new ArrayList<>();
-//    private List<Medicine> buy;
     @DBRef
     private Set<Role> roles = new HashSet<>();
     public User(String firstName,String lastName,String username, String email, String password) {

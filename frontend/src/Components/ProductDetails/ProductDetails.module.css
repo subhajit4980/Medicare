@@ -1,0 +1,17 @@
+.container {
+    /* height: 80vh; */
+    width: 100vw;
+    display: flex;
+
+}
+
+.leftContainer {
+    width: 50vw;
+    height: 85vh;
+}
+
+.rightContainer {
+    width: 50vw;
+    height: 95vh;
+
+}

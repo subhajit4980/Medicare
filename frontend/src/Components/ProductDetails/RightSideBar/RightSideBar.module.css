@@ -1,0 +1,92 @@
+.page {
+    width: 50vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 50%;
+    /* Set the width to 50% for the right half */
+    padding: 20px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.addToCartBtn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.sizeOptions {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sizeOptions button {
+    margin: 0px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.sizeOptions button:hover {
+    border: 2px solid black;
+}
+
+/* Price styling */
+.price {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.rs {
+    padding: 2%;
+    font-size: large;
+}
+
+.mrp {
+    padding: 1%;
+    opacity: 0.4;
+    text-decoration: line-through;
+}
+
+.save {
+    border: 2px solid green;
+    padding: 2%;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+
+/* slider Container */
+.sliderContainer {
+    width: 45vw;
+    border: 2px solid #f757a5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: ; */
+}
+
+.premium p {
+    text-align: center;
+    color: white;
+}
+
+.premium {
+    background-color: #f757a5;
+    /* border-radius: 10px; */
+    font-weight: 500;
+    font-size: larger;
+}

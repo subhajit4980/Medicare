@@ -1,0 +1,74 @@
+.TopNavbar {
+    background-color: #f4f2f2;
+    text-align: center;
+
+    /* make navbar things center of the display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* padding from left right */
+    padding: 1% 0%;
+    width: 100vw;
+}
+
+/* logo */
+.logo {
+    width: 3%;
+    height: auto;
+    margin: 0% 2%;
+}
+
+/* search Bar styles */
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /* height: 50vh; 50% of the viewport height */
+}
+
+.searchInputContainer {
+    padding: .6em 1em;
+    /* 1em is equivalent to the current font size (16px) */
+    width: 80%;
+    height: 50%;
+    background-color: rgb(235, 235, 252);
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.search_img {
+    width: 5%;
+    height: auto;
+}
+
+.searchInput {
+    background-color: rgb(235, 235, 252);
+    /* 60% of the parent container's width */
+    font-size: 1em;
+    border: none;
+    outline: none;
+}
+
+.searchButton {
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: .6em 2em;
+    margin: 0% .5em;
+    /* 1em top/bottom padding, 2em left/right padding */
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    background-color: green;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}

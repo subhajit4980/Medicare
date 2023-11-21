@@ -1,0 +1,89 @@
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    width: 100%;
+    overflow: hidden;
+    /* for making blur thing absolute */
+    position: relative;
+    /* height: 40vh; */
+}
+
+.slide_track {
+    animation: scroll 30s linear infinite;
+    animation-direction: alternate;
+    display: flex;
+}
+
+@keyframes scroll {
+    8% {
+        transform: translateX(0);
+    }
+
+    23% {
+        transform: translateX(-100vw);
+    }
+
+    31% {
+        transform: translateX(-100vw);
+    }
+
+    46% {
+        transform: translateX(-200vw);
+    }
+
+    54% {
+        transform: translateX(-200vw);
+    }
+
+    69% {
+        transform: translateX(-300vw);
+    }
+
+    77% {
+        transform: translateX(-300vw);
+
+    }
+
+    92% {
+        transform: translateX(-400vw);
+
+    }
+
+    100% {
+        transform: translateX(-400vw);
+
+    }
+}
+
+.slide img {
+    width: 100vw;
+}
+
+/* for making a blur */
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 2;
+}
+
+.slider::after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 2;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+}

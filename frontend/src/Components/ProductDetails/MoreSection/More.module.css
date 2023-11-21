@@ -1,0 +1,33 @@
+.btn {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.active {
+    background-color: #F757A5;
+    color: white;
+    /* font-weight: bold; */
+    border: 1px solid rgb(247, 92, 118) !important;
+}
+
+.btn button {
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: .02%;
+}
+
+.more {
+    border: 1px solid black !important;
+    border-radius: 5px;
+    margin: 2%;
+    background-color: #f0f0f0;
+}
+
+.more div {
+    padding: 1% 2% 0%;
+}
+
+.more p {
+    opacity: .8;
+}

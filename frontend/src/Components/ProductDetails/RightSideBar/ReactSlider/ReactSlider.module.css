@@ -1,0 +1,47 @@
+/* Premium slider */
+.slide {
+    height: 20vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slider {
+    height: 20vh;
+}
+
+.img {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.text {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    display: inline-block;
+    width: fit-content;
+    margin-top: 10%;
+
+}
+
+.offer {
+    margin: 0;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.validity {
+    margin: 0;
+    opacity: 0.5;
+}
+
+.slideNo {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}

@@ -72,7 +72,8 @@
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
 <!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<groupId>:qa
+.springframework.boot</groupId>-->
 <!--			<artifactId>spring-boot-starter-tomcat</artifactId>-->
 <!--			<scope>provided</scope>-->
 <!--		</dependency>-->

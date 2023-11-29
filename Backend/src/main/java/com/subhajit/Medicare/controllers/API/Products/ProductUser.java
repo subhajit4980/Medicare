@@ -26,6 +26,7 @@ public class ProductUser {
     public List<Product> getItems() {
         return productRepository.findAll();
     }
+    //    get product by id from database
 
     //    filter all products by discounts
     @GetMapping("/filterByDiscount")
@@ -72,4 +73,5 @@ public class ProductUser {
         products.sort(Comparator.comparing(Product::getBuyer).reversed());
         return products;
     }
+//    filter by least price
 }

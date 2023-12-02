@@ -4,7 +4,7 @@
 
 MediCare is a comprehensive medicine shopping application designed to provide users with a seamless experience in purchasing medicines and healthcare products. 
 Built on a Spring Boot backend, this application offers a range of functionalities to cater to the diverse needs of users looking for medicinal products.
-
+## BASE IP ADDRESS :[13.127.247.148:8080](http://13.127.247.148:8080/api/productUser/getItem)
 ## Features
 
 - **User Authentication**: Register new users and authenticate login credentials securely.

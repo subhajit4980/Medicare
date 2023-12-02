@@ -12,7 +12,6 @@ Built on a Spring Boot backend, this application offers a range of functionaliti
 - **Product Details**: View comprehensive details of each medicine, including dosage, price, and availability.
 - **Shopping Cart**: Add, update, or remove items from the cart for easy purchasing.
 - **Checkout Process**: Secure payment gateways and order confirmation.
-- **Order History**: Accessible records of past orders for user reference.
 
 ## REST API Endpoints
 

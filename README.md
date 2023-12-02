@@ -164,7 +164,6 @@ Built on a Spring Boot backend, this application offers a range of functionaliti
 - **Spring Boot**: Backend framework for robust application development.
 - **Java**: Primary programming language for implementing backend logic.
 - **RESTful APIs**: Architecture for communication between client and server.
-- **Hibernate/JPA**: Object-relational mapping for database interactions.
 - **MongoDB**: No SQL Database management systems for data storage.
 - **Spring Security**: Implementation of security features and authentication.
 

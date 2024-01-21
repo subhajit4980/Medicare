@@ -26,19 +26,19 @@ Built on a Spring Boot backend, this application offers a range of functionaliti
 ### Product Admin Endpoints
 
 #### Add Item
-- **POST /api/productsAdmin/create**
+- **POST `/api/productsAdmin/create`**
   - Description: Add a new item to the database.
   - Method: `POST`
   - Body: `Product` object with item details.
 
 #### Update Item
-- **POST /api/productsAdmin/update**
+- **POST `/api/productsAdmin/update`**
   - Description: Update item data in the database.
   - Method: `POST`
   - Body: `ProductRequest` object with item ID and updated details.
 
 #### Delete Item
-- **POST /api/productsAdmin/delete**
+- **POST `/api/productsAdmin/delete`**
   - Description: Delete an item from the database.
   - Method: `POST`
   - Body: `ProductRequest` object with item ID.
@@ -46,19 +46,19 @@ Built on a Spring Boot backend, this application offers a range of functionaliti
 ### Product User 
 
 #### Get All Items
-- **GET /api/productUser/getItem**
+- **GET `/api/productUser/getItem`**
   - Description: Retrieve all items from the database.
   - Method: `GET`
 
 #### Filter by Discount
-- **GET /api/productUser/filterByDiscount**
+- **GET `/api/productUser/filterByDiscount`**
   - Description: Filter products by a specific discount percentage.
   - Method: `GET`
   - Parameters:
     - `discount` (double): Discount percentage.
 
 #### Filter Product by Discount
-- **GET /api/productUser/filterProductByDiscount**
+- **GET `/api/productUser/filterProductByDiscount`**
   - Description: Filter a particular product by a specific discount percentage.
   - Method: `GET`
   - Parameters:
@@ -66,14 +66,14 @@ Built on a Spring Boot backend, this application offers a range of functionaliti
     - `product` (string): Name of the product.
 
 #### Filter by Category
-- **GET /api/productUser/filterByCategory**
+- **GET `/api/productUser/filterByCategory`**
   - Description: Filter products by category.
   - Method: `GET`
   - Parameters:
     - `category` (string): Category name.
 
 #### Filter by Range Discount
-- **GET /api/productUser/filterByRangeDiscount**
+- **GET `/api/productUser/filterByRangeDiscount`**
   - Description: Filter products by a range of discount percentages.
   - Method: `GET`
   - Parameters:
@@ -81,7 +81,7 @@ Built on a Spring Boot backend, this application offers a range of functionaliti
     - `maxDiscount` (double): Maximum discount percentage.
 
 #### Filter Product by Range Discount
-- **GET /api/productUser/filterProductByRangeDiscount**
+- **GET `/api/productUser/filterProductByRangeDiscount`**
   - Description: Filter a particular product by a range of discount percentages.
   - Method: `GET`
   - Parameters:
@@ -90,12 +90,12 @@ Built on a Spring Boot backend, this application offers a range of functionaliti
     - `product` (string): Name of the product.
 
 #### Filter by Popularity
-- **GET /api/productUser/filterByPopularity**
+- **GET `/api/productUser/filterByPopularity`**
   - Description: Filter products by popularity (based on the number of buyers).
   - Method: `GET`
 
 #### Filter Product by Popularity
-- **GET /api/productUser/filterProductByPopularity**
+- **GET `/api/productUser/filterProductByPopularity`**
   - Description: Filter a particular product by popularity (based on the number of buyers).
   - Method: `GET`
   - Parameters:
@@ -105,20 +105,20 @@ Built on a Spring Boot backend, this application offers a range of functionaliti
 ### Cart
 
 #### Add to Cart
-- **POST /api/order/addCart**
+- **POST `/api/order/addCart`**
   - Description: Add an item to the cart.
   - Method: `POST`
   - Body: `CartRequest` object with item ID, username, and quantity.
 
 #### Delete Cart Item
-- **POST /api/order/deleteCartItem**
+- **POST `/api/order/deleteCartItem`**
   - Description: Remove an item from the cart.
   - Method: `POST`
   - Parameters:
     - `cartId` (string): Cart item ID.
 
 #### Increase Item Quantity in Cart
-- **POST /api/order/increaseItemInCart**
+- **POST `/api/order/increaseItemInCart`**
   - Description: Increase the quantity of an item in the cart.
   - Method: `POST`
   - Parameters:
@@ -126,7 +126,7 @@ Built on a Spring Boot backend, this application offers a range of functionaliti
     - `increment` (int): Quantity to increment.
 
 #### Decrease Item Quantity in Cart
-- **POST /api/order/decreaseItemInCart**
+- **POST `/api/order/decreaseItemInCart`**
   - Description: Decrease the quantity of an item in the cart.
   - Method: `POST`
   - Parameters:
@@ -134,7 +134,7 @@ Built on a Spring Boot backend, this application offers a range of functionaliti
     - `decrement` (int): Quantity to decrement.
 
 #### Get Cart Items
-- **GET /api/order/cart**
+- **GET `/api/order/cart`**
   - Description: Retrieve cart items for a specific user.
   - Method: `GET`
   - Parameters:
@@ -143,7 +143,7 @@ Built on a Spring Boot backend, this application offers a range of functionaliti
 ### Orders
 
 #### Buy Product
-- **POST /api/order/buy**
+- **POST `/api/order/buy`**
   - Description: Buy a product and create an order.
   - Method: `POST`
   - Body: `OrderRequest` object with item ID, quantity, user details, and order information.

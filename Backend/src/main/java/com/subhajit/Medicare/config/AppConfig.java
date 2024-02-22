@@ -1,4 +1,4 @@
-package com.subhajit.Medicare.config;
+package com.subhajit.Medicare.Config;
 import com.subhajit.Medicare.Repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

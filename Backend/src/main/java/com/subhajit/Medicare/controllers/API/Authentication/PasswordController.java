@@ -1,17 +1,13 @@
-package com.subhajit.Medicare.controllers.API.Authentication;
+package com.subhajit.Medicare.Controllers.API.Authentication;
 
-import com.subhajit.Medicare.Models.User;
 import com.subhajit.Medicare.Payload.request.UpdatePasswordRequest;
 import com.subhajit.Medicare.Payload.response.MessageResponse;
 import com.subhajit.Medicare.Repository.UserRepository;
 import com.subhajit.Medicare.Services.PasswordService;
 import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 

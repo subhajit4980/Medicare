@@ -4,7 +4,7 @@ import userImage from "../images/user-solid.svg";
 import cartImage from "../images/cart-shopping-solid.svg";
 import searchImage from "../images/magnifying-glass-solid.svg";
 import ProductImg from "../images/Product.svg"
-import logoImage from "../images/notes-medical-solid.svg";
+import logoImage from "../images/logo.png";
 import ImageButton from "../../Button/ImageButton/ImageButton";
 import { Link } from "react-router-dom";
 
@@ -13,6 +13,7 @@ function TopNavbar() {
   return (
     <div className={styles.TopNavbar}>
       <img className={styles.logo} src={logoImage} alt="logoImage Medicare" />
+      <h3 className={styles.company}>Medicare</h3>
       <div className={styles.searchContainer}>
         <div className={styles.searchInputContainer}>
           <img

@@ -1,4 +1,4 @@
-package com.subhajit.Medicare.controllers.API.Authentication;
+package com.subhajit.Medicare.Controllers.API.Authentication;
 
 import com.subhajit.Medicare.Payload.request.LoginRequest;
 import com.subhajit.Medicare.Payload.request.SignupRequest;

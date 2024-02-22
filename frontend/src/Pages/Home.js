@@ -7,8 +7,8 @@ import Trending from '../Components/Trending/Trending';
 const Home = () => {
     return (
         <React.Fragment>
-            <TopSection />
             <TopSlider />
+            <TopSection />
             <br />
             <br />
             <br />

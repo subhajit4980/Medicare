@@ -1,4 +1,4 @@
-package com.subhajit.Medicare.config;
+package com.subhajit.Medicare.Config;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.enums.SecuritySchemeIn;
@@ -32,8 +32,13 @@ import io.swagger.v3.oas.annotations.servers.Server;
         servers = {
                 @Server(
                         description = "Local ENV", // Description of the server
-                        url = "http://localhost:8080" // Base URL of the server
+                        url = "http://localhost:8080/" // Base URL of the server
+                ),
+                @Server(
+                        description = "Remote ENV", // Description of the server
+                        url = "https://medicare.up.railway.app"
                 )
+
         },
         security = {
                 @SecurityRequirement(
@@ -49,5 +54,4 @@ import io.swagger.v3.oas.annotations.servers.Server;
         bearerFormat = "JWT", // Format of the bearer token
         in = SecuritySchemeIn.HEADER // Location of the bearer token in the request
 )
-public class OpenApiConfig {
-}
+public class OpenApiConfig {}

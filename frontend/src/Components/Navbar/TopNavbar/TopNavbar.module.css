@@ -1,24 +1,28 @@
 .TopNavbar {
-    background-color: #f4f2f2;
+    background-color: #002276;
     text-align: center;
 
     /* make navbar things center of the display */
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 
     /* padding from left right */
-    padding: 1% 0%;
-    width: 100vw;
+    padding: 2% 0%;
+    width: 100%;
+    height:auto;
 }
 
 /* logo */
 .logo {
-    width: 3%;
+    width: 7vh;
     height: auto;
-    margin: 0% 2%;
 }
-
+.company{
+    width: 3%;
+    /* margin: 0% 2%; */
+    margin-right: 3%;
+}
 /* search Bar styles */
 
 .searchContainer {
@@ -33,7 +37,7 @@
     padding: .6em 1em;
     /* 1em is equivalent to the current font size (16px) */
     width: 80%;
-    height: 50%;
+    height: auto;
     background-color: rgb(235, 235, 252);
     display: flex;
     border: 1px solid #ccc;
@@ -71,4 +75,25 @@
 
 a {
     text-decoration: none;
+}
+/* Responsive styles for TopNavbar */
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .TopNavbar {
+        flex-direction: column;
+        padding: 2% 5%; /* Adjusted padding */
+    }
+
+    .searchContainer {
+        margin-top: 10px; /* Adjusted margin */
+    }
+
+    .searchInputContainer {
+        width: 100%;
+        max-width: none; /* Remove max-width */
+    }
+
+    .searchInput {
+        font-size: 0.9em; /* Adjusted font size */
+    }
 }

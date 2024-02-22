@@ -1,4 +1,4 @@
-package com.subhajit.Medicare.controllers.API.Products;
+package com.subhajit.Medicare.Controllers.API.Products;
 
 import com.subhajit.Medicare.Models.Product;
 import com.subhajit.Medicare.Repository.ProductRepository;
@@ -6,7 +6,6 @@ import com.subhajit.Medicare.Repository.OrderRepository;
 import com.subhajit.Medicare.Repository.UserRepository;
 import com.subhajit.Medicare.Services.EmailService;
 import jakarta.validation.Valid;
-import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,7 +25,6 @@ public class ProductUser {
     @Autowired
     EmailService emailService;
     //    Read item data from database
-    @SneakyThrows
     @GetMapping("/getItem")
     public List<Product> getItems() {
         return productRepository.findAll();

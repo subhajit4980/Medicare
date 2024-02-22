@@ -1,4 +1,4 @@
-package com.subhajit.Medicare.controllers.UI;
+package com.subhajit.Medicare.Controllers.UI;
 
 import com.subhajit.Medicare.Services.MyDataService;
 import org.springframework.beans.factory.annotation.Autowired;

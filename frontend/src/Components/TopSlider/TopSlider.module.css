@@ -1,11 +1,13 @@
 .slider {
     background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-    width: 100%;
+    /* width: 100%; */
     overflow: hidden;
     /* for making blur thing absolute */
     position: relative;
-    /* height: 40vh; */
+    height: 60vh;
+    border-radius: 10px;
+    margin: 1em;
 }
 
 .slide_track {
@@ -57,6 +59,7 @@
 
 .slide img {
     width: 100vw;
+    height: 60vh;
 }
 
 /* for making a blur */

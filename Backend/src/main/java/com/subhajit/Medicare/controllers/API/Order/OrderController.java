@@ -1,4 +1,4 @@
-package com.subhajit.Medicare.controllers.API.Order;
+package com.subhajit.Medicare.Controllers.API.Order;
 
 import com.subhajit.Medicare.Models.Product;
 import com.subhajit.Medicare.Models.Order;
@@ -34,12 +34,11 @@ public class OrderController {
         if (item_obj.getQuantityInStock() == 0) {
             return ResponseEntity.badRequest().body("item out of stock");
         }
-        if (userRepository.existsByUsername(orderRequest.getUsername())) {
+        if (userRepository.existsByEmail(orderRequest.getEmail())) {
             Order order = new Order(
                     orderRequest.getItemId(),
 //                    item_obj.getName(),
                     orderRequest.getNoOfQuantityToBuy(),
-                    orderRequest.getUsername(),
                     orderRequest.getEmail(),
                     orderRequest.getAddress(),
                     orderRequest.getPinNumber(),
@@ -58,10 +57,10 @@ public class OrderController {
         }
         return ResponseEntity.badRequest().body("Something went wrong");
     }
-    @GetMapping("/showOrder/{username}")
-    public  ResponseEntity<List<Order>> showOrder(@Valid @PathVariable String username)
+    @GetMapping("/showOrder/{userId}")
+    public  ResponseEntity<List<Order>> showOrder(@Valid @PathVariable String userId)
     {
-        List<Order> order = orderRepository.findByUsername(username);
+        List<Order> order = orderRepository.findByUserId(userId);
         return ResponseEntity.ok(order);
     }
 }
